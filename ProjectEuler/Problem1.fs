@@ -6,6 +6,7 @@ open System.Collections.Generic
 open System.IO
 open System.Linq;
 open System.Numerics
+open Microsoft.FSharp.Data.TypeProviders
 
 type public MathLib() =
     member this.Multiply lst = 
@@ -102,10 +103,10 @@ type public PrimesGenerator() =
         prime 2 Map.empty
 
 
-
 type public Problems() = 
 
     member this.Problem1() =
+
         [1..999] |> Seq.filter (fun i -> i % 3 = 0 || i % 5 = 0) |> Seq.sum
 
     member this.Problem2() =
@@ -508,6 +509,7 @@ type public Problems() =
 
 
     member this.Problem45() = 
+        let triangle (n:int) : int = (n * (n + 1))
         5
 
     member this.Problem48() = 
@@ -542,6 +544,9 @@ type public Problems() =
 
 
 
+    member this.Problem54() =
+        let x =  File.ReadAllLines(@"poker.txt") |> Seq.map(fun l -> l.Split(' ') )
+        5
 
 
 
