@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>ProjectEuler</RootNamespace>
     <AssemblyName>ProjectEuler</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <Name>ProjectEuler</Name>
     <TargetFrameworkProfile />
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
